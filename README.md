@@ -1,12 +1,9 @@
-[English](README-en.md) ←
-
 # 借助 GitHub Actions 的 OpenWrt 在线集成自动编译.
-
-## [![Build](https://img.shields.io/github/workflow/status/KFERMercer/OpenWrt/OpenWrt-CI/master?)](https://github.com/KFERMercer/OpenWrt/actions?query=workflow%3AOpenWrt-CI) [![Release](https://img.shields.io/github/release/KFERMercer/OpenWrt-CI?color=blue)](https://github.com/KFERMercer/OpenWrt-CI/releases)
+## [![Build](https://img.shields.io/github/workflow/status/KleinerSource/OpenWrt-CI/OpenWrt-CI/master?)](https://github.com/KleinerSource/OpenWrt-CI/actions?query=workflow%3AOpenWrt-CI)
 
 支持自动定制固件, 自动调整依赖及生成配置文件, 无需上传配置. 兼容 [coolsnowwolf/lede](https://github.com/coolsnowwolf/lede) 以及 OpenWrt trunk.
 
-同时支持自动合并推送上游提交 (也就是自动更新), 直接把`merge-upstream.yml`放入`.github/workflows/`即可 (默认上游为 coolsnowwolf/lede, 高级玩家请自行改写).
+同时支持自动合并推送上游提交 (也就是自动更新), 
 
 感谢[P3TERX](https://github.com/P3TERX/Actions-OpenWrt)珠玉在前.
 
