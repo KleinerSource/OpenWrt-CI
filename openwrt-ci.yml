@@ -63,6 +63,10 @@ jobs:
       - name: 克隆 OpenWrt 源码
         run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
 
+      - name: 更新&安装源
+        run: |
+          ./scripts/feeds update -a
+          ./scripts/feeds install -a
 
       - name: 自定义插件与主题
         run: |
@@ -74,12 +78,6 @@ jobs:
           git clone https://github.com/AdguardTeam/AdGuardHome.git
           git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
           
-      - name: 更新&安装源
-        run: |
-          ./scripts/feeds update -a
-          ./scripts/feeds install -a
-
-
       - name: 生成固件定制自定义配置
         run: |
           rm -f ./.config*
