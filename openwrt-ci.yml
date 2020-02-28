@@ -65,6 +65,7 @@ jobs:
 
       - name: 更新&安装源
         run: |
+          cd openwrt
           ./scripts/feeds update -a
           ./scripts/feeds install -a
 
