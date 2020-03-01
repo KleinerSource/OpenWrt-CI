@@ -21,7 +21,7 @@ on:
    types: started
 
 env:
-  REPO_URL: https://github.com/KleinerSource/OpenWrt-CI-18.06/blob/master
+  REPO_URL: https://github.com/KleinerSource/OpenWrt-CI-18.06
   REPO_BRANCH: master
   SSH_ACTIONS: false
   TZ: Asia/Shanghai
